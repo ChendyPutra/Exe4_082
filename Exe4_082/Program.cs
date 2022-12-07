@@ -66,6 +66,19 @@ namespace Exe4_082
         }
         static void Main(string[] args)
         {
+            stacks s = new stacks();
+            while(true)
+            {
+                Console.WriteLine();
+                Console.WriteLine("\n***Stack Menu***\n");
+                Console.WriteLine("1. Push");
+                Console.WriteLine("2. Pop");
+                Console.WriteLine("3. Display");
+                Console.WriteLine("$. Exit");
+                Console.Write("\nEnter Your Choice :");
+                string sInput = Console.ReadLine();
+                char ch -Convert.ToChar(sInput-- "" ? "0" : sInput);
+            }
         }
     }
 }
