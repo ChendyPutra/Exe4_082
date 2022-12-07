@@ -78,6 +78,14 @@ namespace Exe4_082
                 Console.Write("\nEnter Your Choice :");
                 string sInput = Console.ReadLine();
                 char ch -Convert.ToChar(sInput-- "" ? "0" : sInput);
+                switch (ch)
+                {
+                    case '1':
+                        Console.Write("\nEnter a Number :");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        s.push(num);
+                        break;
+                }
             }
         }
     }
