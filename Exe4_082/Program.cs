@@ -24,7 +24,7 @@ namespace Exe4_082
 
             public stacks()
             {
-                top null;
+                Node top;
             }
             bool empty()
             {
@@ -47,6 +47,21 @@ namespace Exe4_082
             {
                 Console.WriteLine("\nThe Popped element is:" + top.info);
                 top = top.next;
+            }
+            public void display()
+            {
+                Node tmp;
+
+                if (empty())
+                    Console.WriteLine("Stack Empty");
+                else
+                {
+                    for (tmp = top; tmp != null; tmp = tmp.next)
+                    {
+                        Console.WriteLine(tmp.info);
+                    }
+                    Console.WriteLine();
+                }
             }
         }
         static void Main(string[] args)
