@@ -18,6 +18,22 @@ namespace Exe4_082
                 next = n;
             }
         }
+        class stacks
+        {
+            Node top;
+
+            public stacks()
+            {
+                top null;
+            }
+            bool empty()
+            {
+                if (top == null)
+                    return (true);
+                else
+                    return (false);
+            }
+        }
         static void Main(string[] args)
         {
         }
