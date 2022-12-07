@@ -43,6 +43,11 @@ namespace Exe4_082
                 Console.WriteLine("\n" + element + "pushed.");
 
             }
+            public void pop()
+            {
+                Console.WriteLine("\nThe Popped element is:" + top.info);
+                top = top.next;
+            }
         }
         static void Main(string[] args)
         {
